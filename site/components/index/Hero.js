@@ -1,10 +1,14 @@
+import { useRouter } from "next/router"
+
 const Hero = () => {
+    const { locale } = useRouter()
     return <div
         className="hero -mt-16"
         style={{ background: 'linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc)' }}
     >
         <div className="pt-36 flex max-w-screen-lg mx-auto gap-20 items-start">
             <div className="text-white">
+                <h1>{locale}</h1>
                 <div className="font-bold text-5xl">IT Solutions & Business Services Company</div>
                 <div className="pt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, magna aliqua. ipsum is simply dummy text of the printing.</div>
                 <div>
