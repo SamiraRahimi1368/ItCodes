@@ -22,11 +22,8 @@ const Home = ({ testimonials, members, blogs, customers, solutions }) => {
       <TrustUs />
       <Statics />
       <Collaboration />
-      <br />
       <Testimonial testimonials={testimonials} />
-      <br />
       <Members members={members} />
-      <br />
       <Blogs blogs={blogs} />
       <Colleuges />
       <Customers customers={customers} />

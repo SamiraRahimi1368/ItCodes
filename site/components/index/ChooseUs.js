@@ -1,9 +1,14 @@
+import Image from "next/image"
+
 const ChooseUs = () => {
-    return <div className="pt-26 flex max-w-screen-lg mx-auto gap-10 items-start">
+    return <div className="pt-32 flex max-w-screen-lg mx-auto gap-10 items-start">
         <div className="w-full aspect-square mx-auto mb-8 sm:w-4/5 lg:ml-0 lg:w-full"
         >
-            <img
+            <Image
                 src='/images/choose-1.jpg'
+                width={500}
+                height={500}
+                alt="choose"
             />
 
         </div>

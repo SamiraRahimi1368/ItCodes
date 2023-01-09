@@ -1,6 +1,8 @@
 import urlFor from "../shared/Image"
+import Image from "next/image"
 
 const Customers = ({ customers }) => {
+    console.log(customers)
     return <div
         className="text-center	 text-slate-800"
     >
@@ -13,9 +15,13 @@ const Customers = ({ customers }) => {
             {
                 customers.map(customer => <div
                     className=" p-5 m:10  text-bluess "
+                    key={customer._id}
                 >
-                    <img className="w-24 h-24 md:w-36 md:h-auto  mx-auto "
+                    <Image className="w-24 h-24 md:w-36 md:h-auto  mx-auto "
                         src={urlFor(customer.image).width(200).url()}
+                        width={200}
+                        height={200}
+                        alt="customer-image"
                     />
                     <h3 className='text-slate-900 font-bold ' > {customer.name}</h3>
                 </div>)

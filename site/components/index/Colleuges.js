@@ -1,7 +1,12 @@
+import Image from "next/image"
+
 const Colleuges = () => {
     return <div className="">
-        <img className="w-full h-96 object-cover brightness-50 pt-18 mt-10 absolute -z-10"
+        <Image className="w-full h-96 object-cover brightness-50 pt-18 mt-10 absolute -z-10"
             src="/images/banner-bg.jpg"
+            width={1600}
+            height={500}
+            alt="banner"
         />
         <div className="text-center grid mx-auto max-w-screen-lg">
             <h1 className="font-bold text-orange-600 pt-24">WANT TO WORK WITH US?
@@ -12,13 +17,13 @@ const Colleuges = () => {
             </h1>
         </div>
         <div className="inline p-6 inline flex place-content-center">
-                    <button className="bg-white text-purple-700 hover:bg-blue-700 hover:text-white w-40 h-12 py-2 px-4 rounded mt-5 font-bold transition-colors duration-150  rounded-lg focus:shadow-outline ">
-                        About Us
-                    </button>
-                    <button className="bg-purple-500 text-white hover:bg-blue-700 font-bold hover:text-white w-40 h-12 py-2 px-4 rounded mt-5 transition-colors duration-150  rounded-lg focus:shadow-outline ml-5">
-                        Contact Us
-                    </button>
-                </div>
+            <button className="bg-white text-purple-700 hover:bg-blue-700 hover:text-white w-40 h-12 py-2 px-4 rounded mt-5 font-bold transition-colors duration-150  rounded-lg focus:shadow-outline ">
+                About Us
+            </button>
+            <button className="bg-purple-500 text-white hover:bg-blue-700 font-bold hover:text-white w-40 h-12 py-2 px-4 rounded mt-5 transition-colors duration-150  rounded-lg focus:shadow-outline ml-5">
+                Contact Us
+            </button>
+        </div>
     </div>
 }
 
