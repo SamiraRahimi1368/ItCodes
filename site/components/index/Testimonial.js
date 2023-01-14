@@ -46,8 +46,7 @@ const Testimonial = ({ testimonials }) => {
                     width={200}
                     height={200}
                     alt="testimonial"
-
-                        src={urlFor(testimonial.image).width(200).url()}
+                    src={urlFor(testimonial.image).width(200).url()}
                     />
                     <h3 className='text-slate-900 font-bold flex justify-center mt-5 font-lg'> {testimonial.name} </h3>
                     <h3 className='text-slate-700 dark:text-slate-500 flex justify-center' > {testimonial.job} </h3>

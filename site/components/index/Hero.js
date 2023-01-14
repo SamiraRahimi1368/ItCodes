@@ -24,19 +24,23 @@ const Hero = () => {
             <div className="w-full aspect-square sm:w-4/5 sm:mx-auto md:w-2/3 lg:w-full xl:w-4/5"
             >
                 <Image
-                    src='/images/home-font.png'
+                    // fill
                     width={500}
                     height={500}
+                    src='/images/home-font.png'
                     alt="home-font"
                 />
             </div>
         </div>
+        <div >
         <Image
-            src='/images/home-bottom-shape.png'
+            // fill
             width={1600}
             height={500}
+            src='/images/home-bottom-shape.png'
             alt="home-bottom"
         />
+    </div>
     </div>
 }
 

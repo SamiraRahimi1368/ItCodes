@@ -17,6 +17,7 @@
     "react-dom": "18.2.0",
     "react-intl": "^6.2.5",
     "react-social-icons": "^5.15.0",
+    "recharts": "^2.3.2",
     "swiper": "^8.4.5"
   },
   "devDependencies": {
