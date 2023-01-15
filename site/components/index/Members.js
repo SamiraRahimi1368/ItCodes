@@ -20,14 +20,14 @@ const Members = ({ members }) => {
                     key={member._id}
                 >
                     <div className="relative">
-                        <Image
+                        {/* <Image
                             src={urlFor(member.image).width(200).url()}
                             container="w-full aspect-square md:aspect-auto md:h-96 lg:aspect-square lg:h-auto"
                             className="w-64 h-64 mx-auto ml-4 object-cover rounded hover:scale-110 hover:grayscale transition-all duration-600 ease-in-out group-hover:scale-110 group-hover:brightness-[0.2] transition duration-500"
                             width={200}
                             height={200}
                             alt="member"
-                        />
+                        /> */}
                         <div className="absolute top-0 right-0 bottom-0 left-0 flex gap-4 justify-between m-auto w-48 h-10 items-center">
                             <div className={socialIconStyle}>F</div>
                             <div className={socialIconStyle}>T</div>

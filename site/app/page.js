@@ -1,15 +1,15 @@
 import Hero from "../components/index/Hero"
-// import Solutions from "../components/index/Solutions"
-// import AboutUs from "../components/index/AboutUs"
-// import Statics from "../components/index/Statics"
-// import ChooseUs from "../components/index/ChooseUs"
-// import Testimonial from "../components/index/Testimonial"
-// import TrustUs from "../components/index/TrustUs"
-// import Members from "../components/index/Members"
-// import Blogs from "../components/index/Blogs"
-// import Collaboration from "../components/index/Collaboration"
-// import Customers from "../components/index/Customers"
-// import Colleuges from "../components/index/Colleuges"
+import Solutions from "../components/index/Solutions"
+import AboutUs from "../components/index/AboutUs"
+import Statics from "../components/index/Statics"
+import ChooseUs from "../components/index/ChooseUs"
+import Testimonial from "../components/index/Testimonial"
+import TrustUs from "../components/index/TrustUs"
+import Members from "../components/index/Members"
+import Blogs from "../components/index/Blogs"
+import Collaboration from "../components/index/Collaboration"
+import Customers from "../components/index/Customers"
+import Colleuges from "../components/index/Colleuges"
 import React from 'react'
 // import { SocialIcon } from "react-social-icons"
 
@@ -21,33 +21,33 @@ const Home = async () => {
     let query = encodeURIComponent('*[_type == "testimonial"]')
     let url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response = await fetch(url)
-    let testimonialsData = (await response.json()).result
+    let testimonials = (await response.json()).result
     query = encodeURIComponent('*[_type == "member"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response1 = await fetch(url)
-    let membersData = (await response1.json()).result
+    let members = (await response1.json()).result
 
     query = encodeURIComponent('*[_type == "blog"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response2 = await fetch(url)
-    let blogsData = (await response2.json()).result
+    let blogs = (await response2.json()).result
 
     query = encodeURIComponent('*[_type == "customer"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response3 = await fetch(url)
-    let customersData = (await response3.json()).result
+    let customers = (await response3.json()).result
 
     query = encodeURIComponent('*[_type == "post"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response5 = await fetch(url)
-    let solutionsData = (await response5.json()).result
+    let solutions = (await response5.json()).result
 
 
     return (
         <div>
             <Hero />
-            {/* <Solutions solutions={solutions} /> */}
-            {/* <ChooseUs />
+            <Solutions solutions={solutions} />
+            <ChooseUs />
             <TrustUs />
             <Statics />
             <Collaboration />
@@ -56,7 +56,7 @@ const Home = async () => {
             <Blogs blogs={blogs} />
             <Colleuges />
             <Customers customers={customers} />
-            <AboutUs /> */}
+            <AboutUs />
         </div>
     )
 }

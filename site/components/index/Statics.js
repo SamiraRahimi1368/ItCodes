@@ -1,3 +1,4 @@
+'use client'
 import React, { PureComponent } from 'react';
 import { LineChart, BarChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 

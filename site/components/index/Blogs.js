@@ -15,12 +15,12 @@ const Blogs = ({ blogs }) => {
                     className="border rounded-lg  bg-slate-50 text-bluess"
                     key={blog._id}
                 >
-                    <Image className="mx-auto w-full object-cover  rounded-lg	 mx-auto "
+                    {/* <Image className="mx-auto w-full object-cover  rounded-lg	 mx-auto "
                         src={urlFor(blog.image).width(200).url()}
                         width={200}
                         height={200}
                         alt="blogImage"
-                    />
+                    /> */}
                     <svg class="w-6 h-6 display: inline-block text-cyan-700 text-sm	" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     <a className='pt-6 p-1 text-center md:text-left text-cyan-700  display: inline-block text-sm' href="#"> {blog.author}
                         <svg class="w-5 h-5 ml-5 display: inline-block text-cyan-700 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>                </a>
