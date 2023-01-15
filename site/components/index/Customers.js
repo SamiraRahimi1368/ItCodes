@@ -2,7 +2,7 @@ import urlFor from "../shared/Image"
 import Image from "next/image"
 
 const Customers = ({ customers }) => {
-    console.log(customers)
+
     return <div
         className="text-center	 text-slate-800"
     >

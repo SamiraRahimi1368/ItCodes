@@ -1,14 +1,10 @@
 import urlFor from "../shared/Image"
 import Image from "next/image"
-import Script from 'next/script'
-
 
 const Blogs = ({ blogs }) => {
     return <div
         className="text-center	bg-slate-100 text-slate-800"
     >
-        <Script src="https://cdn.sanity.io/script.js" />
-
         <h1 className="font-bold text-orange-600 pt-4">BLOG & ARTICLE</h1>
         <h1 className="font-bold text-blue-900	text-4xl pt-5	">Recent Blog
         </h1>
