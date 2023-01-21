@@ -45,10 +45,9 @@ const Testimonial = ({ testimonials }) => {
                     </div>
                     <h3 className='pt-6 text-center md:text-left space-y-4'> {testimonial.message} </h3>
                     <Image className="w-10 h-10 md:w-20 md:h-auto border-4 border-indigo-200 border-b-indigo-500 rounded-full border-l-indigo-500 md:h-auto  rounded-full mx-auto object-cover "
-                    width={200}
-                    height={200}
-                    alt="testimonial"
-                    src={urlFor(testimonial.image).width(200).url()}
+                        fill
+                        alt="testimonial"
+                        src={urlFor(testimonial.image).width(200).url()}
                     />
                     <h3 className='text-slate-900 font-bold flex justify-center mt-5 font-lg'> {testimonial.name} </h3>
                     <h3 className='text-slate-700 dark:text-slate-500 flex justify-center' > {testimonial.job} </h3>
