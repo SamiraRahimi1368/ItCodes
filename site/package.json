@@ -11,13 +11,14 @@
   "dependencies": {
     "@next/font": "13.1.1",
     "eslint": "8.30.0",
-    "next": "^13.1.2",
+    "next": "^13.0.6",
+    "next-sanity-image": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.2.5",
     "react-social-icons": "^5.15.0",
     "recharts": "^2.3.2",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.6"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0-alpha.2",
