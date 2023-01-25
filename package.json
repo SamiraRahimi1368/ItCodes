@@ -4,6 +4,7 @@
     "@sanity/image-url": "^1.0.1",
     "@tailwindcss/line-clamp": "^0.4.2",
     "react-social-icons": "^5.15.0",
-    "sanity-plugin-simple-star-rating": "^0.1.6"
+    "sanity-plugin-simple-star-rating": "^0.1.6",
+    "swiper": "^8.4.6"
   }
 }

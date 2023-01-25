@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 import urlFor from "../shared/Image"
 import Image from "next/image"
 
@@ -15,7 +15,7 @@ const Solutions = ({ solutions }) => {
                 solutions.map(solution => <div
                     className="border rounded-lg  bg-slate-50 text-bluess"
                     key={solution._id}
-                   
+
 
                 >
                     {/* <Image className="mx-auto w-full object-cover  rounded-lg	 mx-auto "
@@ -24,7 +24,20 @@ const Solutions = ({ solutions }) => {
                         height={200}
                         alt="solution-image"
                     /> */}
-                    <svg class="w-6 h-6 display: inline-block text-cyan-700 text-sm	" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="currentColor"
+                        className="w-6 h-6 display: inline-block text-cyan-700 text-sm"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zm-4 7a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        ></path>
+                    </svg>
                     <h3 className='text-slate-900 font-bold p-6 ' > {solution.title}</h3>
                     <h3 className='text-slate-700 dark:text-slate-500 text-left p-5 text-sm
 '                   > {solution.message} </h3>

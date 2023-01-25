@@ -1,7 +1,7 @@
 'use client'
 import urlFor from "../shared/Image"
 import Image from "next/image"
-
+import { Swiper, SwiperSlide } from 'swiper/react'
 const Customers = ({ customers }) => {
 
     return <div
@@ -18,7 +18,7 @@ const Customers = ({ customers }) => {
                     className=" p-5 m:10  text-bluess "
                     key={customer._id}
                 >
-                    <div className="w-20 h-20 aspect-square relative">
+                    <div className="w-32 h-26 aspect-square relative">
                         <Image
                             className="object-cover "
                             src={urlFor(customer.image).width(200).url()}

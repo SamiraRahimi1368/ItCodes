@@ -11,7 +11,7 @@ import Collaboration from "../components/index/Collaboration"
 import Customers from "../components/index/Customers"
 import Colleuges from "../components/index/Colleuges"
 import React from 'react'
-import Image from "next/image"
+
 // import { SocialIcon } from "react-social-icons"
 
 const Home = async () => {
@@ -47,7 +47,7 @@ const Home = async () => {
     return (
         <div>
            <Hero />
-            <Solutions solutions={solutions} />
+            {/* <Solutions solutions={solutions} /> */}
             <ChooseUs />
             <TrustUs />
             <Statics />
