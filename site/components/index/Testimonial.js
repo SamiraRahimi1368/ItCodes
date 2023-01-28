@@ -44,16 +44,15 @@ const Testimonial = ({ testimonials }) => {
                         }
                     </div>
                     <h3 className='pt-6 text-center md:text-left space-y-4'> {testimonial.message} </h3>
-                    <div className=" w-20 h-20 aspect-square relative flex justify-center
+                    <div className="w-20 h-20 mx-auto relative mt-6 
                     border-red-400">
                         <Image
                             fill
                             alt="testimonial"
                             src={urlFor(testimonial.image).width(200).url()}
-                            className="md:w-20 md:h-auto border-4 border-indigo-200 border-b-indigo-500 rounded-full border-l-indigo-500 md:h-auto  rounded-full mx-auto flex justify-center "
+                            className=" w-20 md:w-20 md:h-auto border-4 border-indigo-200 border-b-indigo-500 rounded-full border-l-indigo-500 md:h-auto  rounded-full"
                         />
                     </div>
-
                     <h3 className='text-slate-900 font-bold flex justify-center mt-5 font-lg'> {testimonial.name} </h3>
                     <h3 className='text-slate-700 dark:text-slate-500 flex justify-center' > {testimonial.job} </h3>
 

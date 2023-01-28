@@ -21,8 +21,10 @@ const Home = async () => {
 
     let query = encodeURIComponent('*[_type == "testimonial"]')
     let url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
+    const start = new Date()
     let response = await fetch(url)
     let testimonials = (await response.json()).result
+
     query = encodeURIComponent('*[_type == "member"]')
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response1 = await fetch(url)
@@ -43,11 +45,13 @@ const Home = async () => {
     let response5 = await fetch(url)
     let solutions = (await response5.json()).result
 
+    const end = new Date()
+    console.log(end - start)
 
     return (
         <div>
-           <Hero />
-            {/* <Solutions solutions={solutions} /> */}
+            <Hero />
+            <Solutions solutions={solutions} />
             <ChooseUs />
             <TrustUs />
             <Statics />
@@ -58,7 +62,7 @@ const Home = async () => {
             <Colleuges />
             <Customers customers={customers} />
             <AboutUs /> 
-            
+
         </div>
     )
 }
