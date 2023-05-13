@@ -85,7 +85,7 @@ const Header = () => {
 
         </div>
         <div>
-            <button className="bg-purple-500 brightness-80 text-white hover:bg-blue-700 hover:text-white w-40 h-12 mr-40 mt:1 rounded  font-bold transition-colors duration-150  rounded-lg focus:shadow-outline ">
+            <button className="bg-purple-500 brightness-80 text-white hover:bg-blue-700 hover:text-white w-40 h-12 mr-40 mt:1 rounded  font-bold transition-colors duration-150  rounded-lg focus:shadow-outline sm:hidden md:hidden">
                 Get It Support </button>
         </div>
     </div>

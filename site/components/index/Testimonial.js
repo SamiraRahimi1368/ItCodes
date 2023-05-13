@@ -14,9 +14,9 @@ const Testimonial = ({ testimonials }) => {
     return <div
         className="text-center	mt-24 text-slate-800 "
     >
-        <h1 className="font-bold text-orange-600 pt-4">TESTIMONIAL
+        <h1 className="font-bold text-orange-600 pt-4">What We Provide
         </h1>
-        <h1 className="font-bold text-blue-900	text-4xl pt-5">What Our Client Say
+        <h1 className="font-bold text-navy-900	text-4xl pt-5">IT Solutions
         </h1>
         <Swiper
             spaceBetween={20}

@@ -12,8 +12,6 @@ import Customers from "../components/index/Customers"
 import Colleuges from "../components/index/Colleuges"
 import React from 'react'
 
-// import { SocialIcon } from "react-social-icons"
-
 const Home = async () => {
 
     const projectId = 'q8l0xi0c'
@@ -44,9 +42,6 @@ const Home = async () => {
     url = `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${query}`
     let response5 = await fetch(url)
     let solutions = (await response5.json()).result
-
-    const end = new Date()
-    console.log(end - start)
 
     return (
         <div>
